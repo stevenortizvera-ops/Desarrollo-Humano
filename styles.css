@@ -127,14 +127,12 @@ body {
 .app-content {
     opacity: 0;
     visibility: hidden;
-    transform: scale(0.95);
-    transition: opacity 1.5s ease-out, transform 1.5s ease-out, visibility 1.5s ease-out;
+    transition: opacity 1.5s ease-out, visibility 1.5s ease-out;
 }
 
 .app-content.show {
     opacity: 1;
     visibility: visible;
-    transform: scale(1);
 }
 
 /* Background Image Overlay */
