@@ -544,7 +544,8 @@ body::before {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(8px);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
     align-items: center;
     justify-content: center;
 }
@@ -554,7 +555,9 @@ body::before {
     width: 90%;
     max-width: 400px;
     text-align: center;
-    animation: scaleUp 0.3s ease;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    animation: none;
 }
 
 @keyframes scaleUp {
@@ -731,8 +734,6 @@ body::before {
 /* Responsive — Tablet */
 @media (max-width: 768px) {
     .skip-btn { bottom: 20px; right: 20px; padding: 8px 18px; font-size: 0.85rem; }
-    .modal { backdrop-filter: none; -webkit-backdrop-filter: none; }
-    .modal-content { backdrop-filter: none; -webkit-backdrop-filter: none; animation: none; }
     .hero { height: auto; min-height: 100vh; padding: 6rem 0 3rem; }
     .hero h1 { font-size: 2.6rem; }
     .hero .subtitle { font-size: 1.1rem; }
