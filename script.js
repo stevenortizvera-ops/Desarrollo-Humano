@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.card, .glass-card, .pillar-card, .impact-item, .step').forEach((el, index) => {
+    document.querySelectorAll('main .card, main .glass-card, main .pillar-card, main .impact-item, main .step').forEach((el, index) => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';
         el.dataset.delay = `${(index % 3) * 0.1}s`;
