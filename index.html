@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteligencia Emocional | Desarrollo Humano</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Pantalla de inicio para interacción (Requerida por navegadores para audio) -->
+    <div id="start-overlay" class="start-overlay">
+        <button id="btn-start-intro" class="btn-primary btn-large">Iniciar Presentación <i class="fa-solid fa-play"></i></button>
+    </div>
+
+    <!-- Intro Video -->
+    <div id="intro-video-container" class="intro-video-container" style="display: none;">
+        <video id="intro-video" playsinline>
+            <source src="Silhouette_transforms_into_logo_1080p_20260922205013.mp4" type="video/mp4">
+        </video>
+        <button id="skip-intro" class="skip-btn">Omitir Intro <i class="fa-solid fa-forward-step"></i></button>
+    </div>
+
+    <!-- Main Content Wrapper -->
+    <div id="app-content" class="app-content">
+
+    <div class="bg-overlay"></div>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-badge animate-up">
+                <span class="badge-dot"></span>
+                <span>Presentación Interactiva</span>
+            </div>
+            <h1 class="animate-up">Inteligencia Emocional</h1>
+            <p class="subtitle animate-up delay-1">Desarrollo Humano — Jueves 01 de Octubre</p>
+            <div class="team animate-up delay-2">
+                <strong>Equipo:</strong> Justin Siesquen, Manuel Gutarra, Steven Ortíz, Joao Piñas, Milton Chupillón
+            </div>
+            <a href="#importancia" class="scroll-down animate-up delay-3"><i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ¿Por qué importa? -->
+        <section id="importancia" class="section glass-section">
+            <div class="container">
+                <h2 class="section-title">¿Por Qué Importa la Inteligencia Emocional?</h2>
+                <div class="grid-3">
+                    <div class="card">
+                        <h3>El CI no es suficiente</h3>
+                        <p>El coeficiente intelectual no determina por sí solo el éxito profesional.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Las emociones definen el desempeño</h3>
+                        <p>La capacidad de entender y gestionar emociones determina nuestro rendimiento y bienestar.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Hoy exploraremos</h3>
+                        <p>Su definición, impacto laboral y aplicaremos una dinámica práctica.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ¿Qué es? -->
+        <section class="section">
+            <div class="container flex-split">
+                <div class="split-text glass-card">
+                    <h2 class="section-title">¿Qué es la Inteligencia Emocional?</h2>
+                    <p class="lead">La Inteligencia Emocional es la <strong>capacidad de reconocer, entender y gestionar</strong> nuestras propias emociones, así como la habilidad para percibir e influir en las emociones de quienes nos rodean.</p>
+                    <blockquote class="quote">
+                        Según <strong>Daniel Goleman</strong>, la inteligencia emocional se construye sobre 5 pilares fundamentales que definen cómo nos relacionamos con nosotros mismos y con los demás.
+                    </blockquote>
+                </div>
+                <div class="split-image">
+                    <img src="eq-hero.jpg" alt="Representación de la Inteligencia Emocional" class="glass-img animate-up delay-2">
+                </div>
+            </div>
+        </section>
+
+        <!-- Los 5 Pilares -->
+        <section class="section glass-section">
+            <div class="container">
+                <h2 class="section-title text-center">Los 5 Pilares</h2>
+                <div class="grid-pillars">
+                    <div class="card pillar-card">
+                        <div class="icon"><i class="fa-solid fa-user-shield"></i></div>
+                        <h3>Autoconciencia</h3>
+                        <p>Conocer tus estados emocionales y recursos internos.</p>
+                    </div>
+                    <div class="card pillar-card">
+                        <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3>Autorregulación</h3>
+                        <p>Manejar impulsos y mantener adaptabilidad ante el cambio.</p>
+                    </div>
+                    <div class="card pillar-card">
+                        <div class="icon"><i class="fa-solid fa-bullseye"></i></div>
+                        <h3>Motivación</h3>
+                        <p>Canalizar emociones hacia metas personales y profesionales.</p>
+                    </div>
+                    <div class="card pillar-card">
+                        <div class="icon"><i class="fa-solid fa-heart"></i></div>
+                        <h3>Empatía</h3>
+                        <p>Sintonizar con sentimientos y necesidades ajenas.</p>
+                    </div>
+                    <div class="card pillar-card">
+                        <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+                        <h3>Habilidades Sociales</h3>
+                        <p>Construir relaciones efectivas y redes vinculares sólidas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impacto en Liderazgo y Bienestar -->
+        <section class="section">
+            <div class="container">
+                <div class="grid-2">
+                    <div class="glass-card">
+                        <h2 class="section-title">Impacto en el Liderazgo y Equipos</h2>
+                        <p class="lead">El líder emocionalmente inteligente:</p>
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-check"></i> <span>Inspira y gestiona el <strong>clima emocional</strong> de su equipo.</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span>Facilita la <strong>negociación pacífica</strong> y resolución de conflictos cotidianos.</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span>Fomenta <strong>confianza, comunicación abierta</strong> y colaboración genuina.</span></li>
+                        </ul>
+                        <div class="alert-box">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <p>Un equipo con alta IE no solo produce más — también se cuida mejor entre sí.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card">
+                        <h2 class="section-title">Impacto en Rendimiento y Bienestar</h2>
+                        <div class="impact-item">
+                            <h3><i class="fa-solid fa-person-praying"></i> Menos Estrés</h3>
+                            <p>Reduce el estrés y previene el agotamiento laboral (burnout).</p>
+                        </div>
+                        <div class="impact-item">
+                            <h3><i class="fa-solid fa-dumbbell"></i> Mayor Resiliencia</h3>
+                            <p>Genera capacidad para afrontar retos y cambios con actitud constructiva.</p>
+                        </div>
+                        <div class="impact-item">
+                            <h3><i class="fa-solid fa-seedling"></i> Clima Saludable</h3>
+                            <p>Menos rotación, más compromiso y satisfacción en el trabajo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusiones -->
+        <section class="section glass-section">
+            <div class="container">
+                <h2 class="section-title text-center">Conclusiones del Equipo</h2>
+                <div class="grid-3 team-conclusions">
+                    <div class="card conclusion-card">
+                        <h3>Justin Siesquen</h3>
+                        <p>Transforma reacciones impulsivas en respuestas conscientes y constructivas.</p>
+                    </div>
+                    <div class="card conclusion-card">
+                        <h3>Manuel Gutarra</h3>
+                        <p>Marca la diferencia entre un trabajador común y un líder transformador.</p>
+                    </div>
+                    <div class="card conclusion-card">
+                        <h3>Steven Ortíz</h3>
+                        <p>Mejora el desempeño técnico y construye relaciones interpersonales duraderas.</p>
+                    </div>
+                    <div class="card conclusion-card">
+                        <h3>Joao Piñas</h3>
+                        <p>Reduce conflictos y fomenta un ambiente laboral armónico.</p>
+                    </div>
+                    <div class="card conclusion-card">
+                        <h3>Milton Chupillón</h3>
+                        <p>Es un proceso de autodescubrimiento que impacta todas las facetas de la vida.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Dinámica -->
+        <section class="section dynamics-section">
+            <div class="container">
+                <div class="glass-card text-center text-content">
+                    <h2 class="section-title">Dinámica: La Ruleta de las Emociones</h2>
+                    <div class="steps-grid">
+                        <div class="step">
+                            <span class="step-num">01</span>
+                            <h3>Elige un líder</h3>
+                            <p>Cada grupo selecciona un representante que accede a la plataforma interactiva.</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">02</span>
+                            <h3>Gira la ruleta</h3>
+                            <p>El líder gira la ruleta virtual para recibir un caso sorpresa.</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-num">03</span>
+                            <h3>Debate y expón</h3>
+                            <p>3 minutos para debatir en equipo + 1 minuto para exponer la solución.</p>
+                        </div>
+                    </div>
+                    
+                    <button id="btn-leader-access" class="btn-primary mt-4">Acceso a Líderes <i class="fa-solid fa-lock"></i></button>
+                </div>
+            </div>
+        </section>
+        <!-- Muro de Respuestas -->
+        <section class="section glass-section" id="respuestas-section">
+            <div class="container">
+                <h2 class="section-title text-center">Muro de Respuestas</h2>
+                <!-- Contador de grupos -->
+                <div id="response-counter" style="display:none; max-width:400px; margin: 0 auto 2rem;">
+                    <p id="counter-text" class="text-center mb-2" style="color: var(--text-muted); font-size:0.95rem;"></p>
+                    <div class="progress-bar-bg" style="max-width:100%;">
+                        <div id="counter-progress" class="progress-bar-fill" style="transition: width 0.6s ease;"></div>
+                    </div>
+                </div>
+                <p class="text-center mb-4" style="color: var(--text-muted);">Las conclusiones de los líderes aparecerán aquí.</p>
+                <div id="responses-grid" class="grid-3">
+                    <!-- Responses will be injected here via JS -->
+                </div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <button id="btn-clear-wall" class="btn-clear" title="Limpiar Muro (Pruebas)"><i class="fa-solid fa-trash"></i> Limpiar Muro</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Leader Access Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <h2>Área Exclusiva para Líderes</h2>
+            <p>Selecciona tu nombre e ingresa tu ID para acceder a la ruleta.</p>
+            <div class="input-group" style="flex-direction: column;">
+                <select id="leader-select">
+                    <option value="" disabled selected>Elige tu nombre...</option>
+                    <option value="MARCO ANTONIO PAPA FERNANDEZ">MARCO ANTONIO PAPA FERNANDEZ</option>
+                    <option value="JOSE JIMENEZ CHIVIGORRE">JOSE JIMENEZ CHIVIGORRE</option>
+                    <option value="JESSICA SHANTAL VALENZUELA RUIZ">JESSICA SHANTAL VALENZUELA RUIZ</option>
+                    <option value="JERIKO AHMED CUTIMANCO ATAO">JERIKO AHMED CUTIMANCO ATAO</option>
+                </select>
+                <input type="password" id="leader-id" placeholder="Ingresa tu ID">
+                <button id="btn-login" class="btn-primary">Entrar</button>
+            </div>
+            <p id="login-error" class="error-msg"></p>
+        </div>
+    </div>
+
+    <!-- Roulette Area (Hidden by default) -->
+    <div id="roulette-area" class="roulette-screen hidden">
+        <button id="btn-exit" class="btn-secondary close-roulette"><i class="fa-solid fa-arrow-left"></i> Volver</button>
+        
+        <div class="roulette-container">
+            <h2 class="section-title text-center">La Ruleta de las Emociones</h2>
+            <p class="text-center mb-2">Haz clic en el botón para girar y descubrir el tema a debatir.</p>
+            <!-- Badges de temas usados -->
+            <div class="topics-used text-center mb-2">
+                <span class="topic-badge" data-topic="Autoconciencia">Autoconciencia</span>
+                <span class="topic-badge" data-topic="Autorregulación">Autorregulación</span>
+                <span class="topic-badge" data-topic="Motivación">Motivación</span>
+                <span class="topic-badge" data-topic="Empatía">Empatía</span>
+                <span class="topic-badge" data-topic="Habilidades Sociales">Habilidades Sociales</span>
+            </div>
+            
+            <div class="wheel-wrapper">
+                <div class="pointer"><i class="fa-solid fa-caret-down"></i></div>
+                <div class="wheel" id="wheel">
+                    <!-- Slices will be generated by JS -->
+                </div>
+            </div>
+            
+            <div class="roulette-controls text-center mt-4">
+                <button id="btn-spin" class="btn-primary btn-large">GIRAR LA RULETA</button>
+            </div>
+
+            <!-- Timer Area -->
+            <div id="timer-area" class="timer-area hidden">
+                <div class="result-box glass-card text-center mb-4">
+                    <h3>Tema Seleccionado:</h3>
+                    <h2 id="result-topic" class="highlight-text">Autoconciencia</h2>
+                    <p id="result-desc">Debatan sobre cómo aplicar esto en un caso práctico.</p>
+                </div>
+                <div class="timer-display">
+                    <span id="time-display">03:00</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div id="timer-progress" class="progress-bar-fill"></div>
+                </div>
+                <div class="timer-controls text-center mt-2">
+                    <button id="btn-start-timer" class="btn-primary">Iniciar Debate</button>
+                    <button id="btn-reset-timer" class="btn-secondary">Reiniciar</button>
+                    <button id="btn-extra-time" class="btn-extra" title="+1 minuto extra">⏱️ +1 min</button>
+                </div>
+                
+                <!-- Response form -->
+                <div id="response-form-area" class="mt-4 hidden glass-card" style="padding: 1.5rem;">
+                    <h3>Registra tu Respuesta</h3>
+                    <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 1rem;">Escribe las conclusiones de tu equipo para compartirlas con todos.</p>
+                    <textarea id="leader-response-text" rows="4" placeholder="Escribe aquí tu respuesta..."></textarea>
+                    <button id="btn-submit-response" class="btn-primary mt-2" style="width: 100%;">Publicar Respuesta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <a href="#" class="footer-credit">steven.dev</a>
+    </footer>
+
+    </div> <!-- End app-content -->
+
+    <!-- Toast Notifications Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
